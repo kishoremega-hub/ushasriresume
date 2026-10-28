@@ -53,7 +53,7 @@ export function Expertise() {
 
 export function Pipeline() {
   const [active, setActive] = useState(2);
-  const cur = PIPELINE[active];
+  const cur = PIPELINE[active] ?? PIPELINE[0]!;
   return (
     <Section id="pipeline" alt>
       <SectionHeader eyebrow="ci/cd" title="From Code to Deployment" subtitle="Building Reliable Delivery Through Automation" />
