@@ -7,11 +7,11 @@ import { EMAIL, GITHUB_URL, LINKEDIN_URL, ROLES, STATS } from "./data";
 
 function TypedRole() {
   const [i, setI] = useState(0);
-  const [text, setText] = useState(ROLES[0]);
+  const [text, setText] = useState<string>(ROLES[0] ?? "");
   const reduce = useReducedMotion();
   useEffect(() => {
     if (reduce) return;
-    const word = ROLES[i];
+    const word = ROLES[i] ?? "";
     if (text === word) {
       const t = setTimeout(() => { setText(""); setI((i + 1) % ROLES.length); }, 1800);
       return () => clearTimeout(t);
