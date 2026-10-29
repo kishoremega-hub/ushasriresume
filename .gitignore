@@ -30,6 +30,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+<<<<<<< HEAD
 node_modules/
 .eslintcache
 npm-debug.log*
+=======
+>>>>>>> b94ef80ebfdc60138ccdae87aab4b23d6cfd8478
